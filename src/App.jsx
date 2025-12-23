@@ -8,11 +8,18 @@ import Buttons from './Buttons';
 function App() {
 
   const [clothes, setClothes] = useState(data);
-  console.log(clothes)
+  
+  const chosenClothes = (searchTerm) => {
+    const newClothes = data.filter(element => element.searchTerm === searchTerm);
+    setClothes(newClothes)
+  }
   
    return (
     <>
-      <Buttons />
+    <div className='cont'>
+      <h2 className='back'>Free Standard Shipping</h2>
+    </div>
+      <Buttons filteredClothes={chosenClothes}/>
       <Clothes itemsForSale={clothes} />      
     </>
   )

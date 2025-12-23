@@ -7,8 +7,7 @@ function Clothes({itemsForSale}) {
                     <div key={id} className="product-card">
                         <img src={image} alt="clothes" width="400px" height="500px" />
                         <div className="product-info">
-                            <h3>{name}</h3>
-                            <h4>{searchTerm}</h4>
+                            <h3>{name}</h3>                            
                             <h4>${price}</h4>
                         </div>
                         
