@@ -42,3 +42,18 @@ button {
   margin: 10px;
 }
 
+nav {
+  background-color: #cfd8dc;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+

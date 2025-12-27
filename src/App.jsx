@@ -1,26 +1,26 @@
 import { useState } from 'react'
 import './App.css'
-import { data } from './data'
-import Clothes from './Clothes';
-import Buttons from './Buttons';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router";
+import About from './About';
+import Contact from './Contact';
+import Shop from './Shop';
 
 
-function App() {
-
-  const [clothes, setClothes] = useState(data);
-  
-  const chosenClothes = (searchTerm) => {
-    const newClothes = data.filter(element => element.searchTerm === searchTerm);
-    setClothes(newClothes)
-  }
-  
+function App() { 
    return (
     <>
-    <div className='cont'>
-      <h2 className='back'>Free Standard Shipping</h2>
-    </div>
-      <Buttons filteredClothes={chosenClothes}/>
-      <Clothes itemsForSale={clothes} />      
+    <Router>
+      <nav>
+        <Link to="/" className="link">Shop</Link>
+        <Link to="/about" className="link">About</Link>
+        <Link to="/contact" className="link">Contact</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Shop />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>    
     </>
   )
 }
