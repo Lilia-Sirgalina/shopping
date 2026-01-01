@@ -18,7 +18,7 @@ function Shop() {
     <div className='cont'>
       <h2 className='back'>Free Standard Shipping</h2>
     </div>
-      <Buttons filteredClothes={chosenClothes}/>
+      <Buttons filteredClothes={chosenClothes} setClothes={setClothes}/>
       <Clothes itemsForSale={clothes} />      
     </>
   )
