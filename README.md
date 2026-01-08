@@ -1,16 +1,43 @@
-# React + Vite
+# Shopping Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo  
+🔗 [View the app on Netlify](https://shopping-store-lily.netlify.app/)
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Shopping Store** is a small educational React project.  
+The app displays product cards with images, descriptions, and prices.
 
-## React Compiler
+At the top of the page, there are filter buttons that allow users to view specific product categories:
+- Dresses
+- Skirts
+- Pants
+- Shoes  
+There is also a **"Show All"** button to display all products.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application includes a navigation bar with three sections:
+- Shop
+- About
+- Contacts
 
-## Expanding the ESLint configuration
+This project was built using React. The `.map()` method is used to render product cards, the `.filter()` method is used to filter products by category, and **React Router** is implemented to navigate between components via the navbar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Here's what the app looks like:
+
+![App Screenshot](Captura-1.JPG)
+
+## How to Use:
+- Click on the navbar links to navigate between pages.
+- Click on the category buttons to filter products by type.
+- Use the **"Show All"** button to display all available products.
+
+## Features:
+- Product cards with images, descriptions, and prices.
+- Filtering products by category.
+- Navigation between pages using React Router.
+- Clean and intuitive user interface.
+
+## Requirements:
+- A modern web browser.
+- JavaScript enabled.
+
